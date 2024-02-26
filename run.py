@@ -16,7 +16,13 @@ def greeting():
     print("Welcome to my Social Media Survey\n" +
           "Please take your time and feel free to answer my questions below: ")
 
+def name():
+    print("Please enter your name below: ")
+    first_name = input()
+    print(f"Welcome {first_name}, how old are you?")
+
 def main():
     greeting()
+    name()
 
 main()
