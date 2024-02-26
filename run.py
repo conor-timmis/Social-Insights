@@ -10,7 +10,7 @@ SCOPE = [
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('social_insights')
+SURVEY_RESULTS_SHEET = GSPREAD_CLIENT.open('social_insights')
 
 def greeting():
     print("Welcome to my Social Media Survey\n" +
@@ -19,7 +19,12 @@ def greeting():
 def name():
     print("Please enter your name below: ")
     first_name = input()
+
+    worksheet = SURVEY_RESULTS_SHEET.sheet1
+    worksheet.append_row([first_name])
+
     print(f"Welcome {first_name}, how old are you?")
+ 
 
 def main():
     greeting()
