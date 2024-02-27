@@ -38,6 +38,8 @@ def main():
     greeting()
     sv_name = name()
     sv_age = age(sv_name)
+    worksheet = SURVEY_RESULTS_SHEET.sheet1
     sv_time = screen_time(sv_name, sv_age, worksheet)
+    worksheet.append_row([sv_name, sv_age, sv_time])
 
 main()
