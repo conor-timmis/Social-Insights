@@ -30,13 +30,13 @@ def age(first_name):
     sv_age = input()
 
     worksheet = SURVEY_RESULTS_SHEET.sheet1
-    worksheet.append_row([sv_age])
+    worksheet.append_row([first_name, sv_age])
 
     return sv_age
 
 def main():
     greeting()
     first_name = name()
-    age()
+    age(first_name)
 
 main()
