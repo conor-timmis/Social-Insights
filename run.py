@@ -33,6 +33,14 @@ def screen_time(sv_name, sv_age, worksheet):
     "Please share your average screen time daily in hours, this can also include decimals for specificity: ")
     sv_time = input()
     return sv_time
+
+def sv_yesno(prompt):
+    while True:
+        response = input(prompt).strip().lower()
+        if response == "yes" or response == "no":
+            return response
+        else:
+            print('Please enter either "Yes" or "No".')
     
 def main():
     greeting()
@@ -41,5 +49,6 @@ def main():
     worksheet = SURVEY_RESULTS_SHEET.sheet1
     sv_time = screen_time(sv_name, sv_age, worksheet)
     worksheet.append_row([sv_name, sv_age, sv_time])
+
 
 main()
