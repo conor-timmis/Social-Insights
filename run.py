@@ -17,26 +17,27 @@ def greeting():
           "Please take your time and feel free to answer my questions below: ")
 
 def name():
-    print("Please enter your name below: ")
-    first_name = input()
+    print("Please enter your name below, it can be full name or just your first name: ")
+    sv_name = input()
 
-    worksheet = SURVEY_RESULTS_SHEET.sheet1
-    worksheet.append_row([first_name])
+    return sv_name
 
-    return first_name
-
-def age(first_name):
-    print(f"Welcome {first_name}, how old are you?")
+def age(sv_name):
+    print(f"Welcome {sv_name}, how old are you?")
     sv_age = input()
-
-    worksheet = SURVEY_RESULTS_SHEET.sheet1
-    worksheet.append_row([first_name, sv_age])
 
     return sv_age
 
+def screen_time(sv_name, sv_age, worksheet):
+    print(f"Great! Your name is {sv_name}, and you are {sv_age}.\n"+
+    "Please share your average screen time daily in hours, this can also include decimals for specificity: ")
+    sv_time = input()
+    return sv_time
+    
 def main():
     greeting()
-    first_name = name()
-    age(first_name)
+    sv_name = name()
+    sv_age = age(sv_name)
+    sv_time = screen_time(sv_name, sv_age, worksheet)
 
 main()
