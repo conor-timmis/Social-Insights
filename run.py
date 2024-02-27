@@ -23,11 +23,20 @@ def name():
     worksheet = SURVEY_RESULTS_SHEET.sheet1
     worksheet.append_row([first_name])
 
+    return first_name
+
+def age(first_name):
     print(f"Welcome {first_name}, how old are you?")
- 
+    sv_age = input()
+
+    worksheet = SURVEY_RESULTS_SHEET.sheet1
+    worksheet.append_row([sv_age])
+
+    return sv_age
 
 def main():
     greeting()
-    name()
+    first_name = name()
+    age()
 
 main()
