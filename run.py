@@ -17,10 +17,9 @@ def greeting():
           "Please take your time and feel free to answer my questions below: ")
 
 def name():
-    print("Please enter your name below, it can be full name or just your first name: ")
-    sv_name = input()
-
-    return sv_name
+    prompt = "Please enter your name below, it can be full name or just your first name: "
+    response = input(prompt).strip().title()
+    return response
 
 def age(sv_name):
     print(f"Welcome {sv_name}, how old are you?")
@@ -36,11 +35,11 @@ def screen_time(sv_name, sv_age, worksheet):
 
 def sv_yesno(prompt):
     while True:
-        response = input(prompt).strip().lower()
-        if response == "yes" or response == "no":
+        response = input(prompt).strip().title()  
+        if response in ["Yes", "No"]:  
             return response
         else:
-            print('Please enter either "Yes" or "No".')
+            print("Please enter either 'Yes' or 'No'.")
     
 def sv_question1():
     return sv_yesno("Question 1: Would you like to participate? (Yes/No) ")
@@ -61,13 +60,16 @@ def main():
     greeting()
     sv_name = name()
     sv_age = age(sv_name)
-    sv_time = screen_time(sv_name, sv_age)
+    
+    worksheet = SURVEY_RESULTS_SHEET.sheet1
+
+    sv_time = screen_time(sv_name, sv_age, worksheet)
     svy_question1 = sv_question1()
     svy_question2 = sv_question2()
     svy_question3 = sv_question3()
     svy_question4 = sv_question4()
     svy_question5 = sv_question5()
-    worksheet = SURVEY_RESULTS_SHEET.sheet1
+    
     worksheet.append_row([sv_name, sv_age, sv_time, svy_question1, svy_question2, svy_question3, svy_question4, svy_question5])
 
 main()
