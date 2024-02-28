@@ -42,13 +42,32 @@ def sv_yesno(prompt):
         else:
             print('Please enter either "Yes" or "No".')
     
+def sv_question1():
+    return sv_yesno("Question 1: Would you like to participate? (Yes/No) ")
+
+def sv_question2():
+    return sv_yesno("Question 2: Would you like to participate? (Yes/No) ")
+
+def sv_question3():
+    return sv_yesno("Question 3: Would you like to participate? (Yes/No) ")
+
+def sv_question4():
+    return sv_yesno("Question 4: Would you like to participate? (Yes/No) ")
+
+def sv_question5():
+    return sv_yesno("Question 5: Would you like to participate? (Yes/No) ")
+    
 def main():
     greeting()
     sv_name = name()
     sv_age = age(sv_name)
+    sv_time = screen_time(sv_name, sv_age)
+    svy_question1 = sv_question1()
+    svy_question2 = sv_question2()
+    svy_question3 = sv_question3()
+    svy_question4 = sv_question4()
+    svy_question5 = sv_question5()
     worksheet = SURVEY_RESULTS_SHEET.sheet1
-    sv_time = screen_time(sv_name, sv_age, worksheet)
-    worksheet.append_row([sv_name, sv_age, sv_time])
-
+    worksheet.append_row([sv_name, sv_age, sv_time, svy_question1, svy_question2, svy_question3, svy_question4, svy_question5])
 
 main()
