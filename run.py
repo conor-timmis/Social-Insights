@@ -42,19 +42,19 @@ def sv_yesno(prompt):
             print("Please enter either 'Yes' or 'No'.")
     
 def sv_question1():
-    return sv_yesno("Question 1: Would you like to participate? (Yes/No) ")
+    return sv_yesno("Do you feel like you are spending too much time on Social Media daily? (Yes/No) ")
 
 def sv_question2():
-    return sv_yesno("Question 2: Would you like to participate? (Yes/No) ")
+    return sv_yesno("Do you find yourself feeling the need to be on it so often? (Yes/No) ")
 
 def sv_question3():
-    return sv_yesno("Question 3: Would you like to participate? (Yes/No) ")
+    return sv_yesno("Are you always checking for notifications? (Yes/No) ")
 
 def sv_question4():
-    return sv_yesno("Question 4: Would you like to participate? (Yes/No) ")
+    return sv_yesno("Do you think you would leave your house without your phone? (Yes/No) ")
 
 def sv_question5():
-    return sv_yesno("Question 5: Would you like to participate? (Yes/No) ")
+    return sv_yesno("Do you often ignore other important activities or responsibilities because of social media use? (Yes/No) ")
     
 def main():
     greeting()
