@@ -22,10 +22,13 @@ def name():
     return response
 
 def age(sv_name):
-    print(f"Welcome {sv_name}, how old are you?")
-    sv_age = input()
-
-    return sv_age
+    while True:
+        print(f"Welcome {sv_name}, how old are you?")
+        sv_age = input()
+        if sv_age.isdigit(): 
+            return int(sv_age)  
+        else:
+            print("Sorry, please enter your age only using numbers.")
 
 def screen_time(sv_name, sv_age, worksheet):
     print(f"Great! Your name is {sv_name}, and you are {sv_age}.\n"+
