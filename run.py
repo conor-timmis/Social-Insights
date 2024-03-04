@@ -31,10 +31,15 @@ def age(sv_name):
             print("Sorry, please enter your age only using numbers.")
 
 def screen_time(sv_name, sv_age, worksheet):
-    print(f"Great! Your name is {sv_name}, and you are {sv_age}.\n"+
-    "Please share your average screen time daily in hours, this can also include decimals for specificity: ")
-    sv_time = input()
-    return sv_time
+    print(f"Great! Your name is {sv_name}, and you are {sv_age}.\n" +
+          "Please share your average screen time daily in hours, this can also include decimals for specificity: ")
+
+    while True:
+        sv_time = input()
+        if all(char.isdigit() or char == '.' for char in sv_time):
+            return sv_time
+        else:
+            print("Sorry, please enter your screen time using only numbers and decimal points.")
 
 def sv_yesno(prompt):
     while True:
