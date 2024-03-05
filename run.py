@@ -1,5 +1,12 @@
 import gspread
 from google.oauth2.service_account import Credentials
+import os
+
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -11,24 +18,38 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SURVEY_RESULTS_SHEET = GSPREAD_CLIENT.open('social_insights')
+NAME = None
+AGE = 0
 
 def greeting():
     print("Welcome to my Social Media Survey\n" +
           "Please take your time and feel free to answer my questions below: ")
 
+
 def name():
-    prompt = "Please enter your name below, it can be full name or just your first name: "
-    response = input(prompt).strip().title()
-    return response
+    """
+    Keep a user inside of a while-loop until they give a valid name using alpha.
+    """
+    while True:
+        prompt = "Please enter your name below, it can be full name or just your first name: "
+        NAME = input(prompt).strip().title()
+        if NAME.isalpha():
+            return NAME
+        else:
+            print(f"Sorry, {NAME} is invalid, please use only letters.")
+
 
 def age(sv_name):
+    """
+    Keep a user inside of a while-loop until they give a valid age using numbers.
+    """
     while True:
-        print(f"Welcome {sv_name}, how old are you?")
-        sv_age = input()
-        if sv_age.isdigit(): 
-            return int(sv_age)  
+        AGE = input(f"Welcome {sv_name}, how old are you?\n")
+        if AGE.isdigit(): 
+            return int(AGE)  
         else:
-            print("Sorry, please enter your age only using numbers.")
+            print(f"Sorry, {AGE} is invalid, please use only numbers.")
+
 
 def screen_time(sv_name, sv_age, worksheet):
     print(f"Great! Your name is {sv_name}, and you are {sv_age}.\n" +
@@ -41,6 +62,7 @@ def screen_time(sv_name, sv_age, worksheet):
         else:
             print("Sorry, please enter your screen time using only numbers and decimal points.")
 
+
 def sv_yesno(prompt):
     while True:
         response = input(prompt).strip().title()  
@@ -49,21 +71,27 @@ def sv_yesno(prompt):
         else:
             print("Please enter either 'Yes' or 'No'.")
     
+
 def sv_question1():
     return sv_yesno("Do you feel like you are spending too much time on Social Media daily? (Yes/No) ")
+
 
 def sv_question2():
     return sv_yesno("Do you find yourself feeling the need to be on it so often? (Yes/No) ")
 
+
 def sv_question3():
     return sv_yesno("Are you always checking for notifications? (Yes/No) ")
+
 
 def sv_question4():
     return sv_yesno("Do you think you would leave your house without your phone? (Yes/No) ")
 
+
 def sv_question5():
     return sv_yesno("Do you often ignore other important activities or responsibilities because of social media use? (Yes/No) ")
-    
+
+
 def main():
     greeting()
     sv_name = name()
