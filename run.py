@@ -98,7 +98,7 @@ def sv_question1():
 
 
 def sv_question2():
-    return sv_yesno("Do you find yourself feeling the need to be on it so often? (Yes/No) ")
+    return sv_yesno("Do you find yourself feeling the need to be on Social Media  often? (Yes/No) ")
 
 
 def sv_question3():
@@ -110,10 +110,28 @@ def sv_question4():
 
 
 def sv_question5():
-    return sv_yesno("Do you often ignore other important activities or responsibilities because of social media use? (Yes/No) ")
+    while True:
+        response = input("How often do you find yourself comparing your life to others' on social media?\n"
+                         "A. Frequently, I often feel like a failure in comparison\n"
+                         "B. Occasionally, but I try not to let it affect me\n"
+                         "C. Rarely, I know that people usually show only the best parts of their lives on social media\n"
+                         "Please choose A, B, or C: ").strip().upper()
+        if response in ['A', 'B', 'C']:
+            return response
+        else:
+            print("Please select a valid option (A, B, or C).")
 
 def sv_question6():
-    return sv_yesno("Do you often ignore other important activities or responsibilities because of social media use? (Yes/No) ")
+    while True:
+        response = input("How do you feel when you see others having fun on social media while you're not included?\n"
+                         "A. Fear of missing out: I feel left out and envious\n"
+                         "B. Indifferent: I understand that not every moment is captured online\n"
+                         "C. Happy for them: I appreciate their experiences without feeling left out\n"
+                         "Choose A, B, or C: ").strip().upper()
+        if response in ['A', 'B', 'C']:
+            return response
+        else:
+            print("Please select a valid option (A, B, or C).")
 
 
 def main():
