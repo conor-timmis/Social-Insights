@@ -79,6 +79,18 @@ def sv_yesno(prompt):
             return response
         else:
             print("Please enter either 'Yes' or 'No'.")
+
+
+def sv_scale(prompt, min_value, max_value):
+    while True:
+        try:
+            response = int(input(prompt))
+            if min_value <= response <= max_value:
+                return response
+            else:
+                print(f"Sorry, please enter a number between {min_value} and {max_value}.")
+        except ValueError:
+            print("Please enter a valid number.")
     
 
 def sv_question1():
@@ -90,14 +102,17 @@ def sv_question2():
 
 
 def sv_question3():
-    return sv_yesno("Are you always checking for notifications? (Yes/No) ")
+    return sv_scale("On a scale of 1 to 10, how frequently do you check for notifications? (1 being rarely, 10 being always): ", 1, 10)
 
 
 def sv_question4():
-    return sv_yesno("Do you think you would leave your house without your phone? (Yes/No) ")
+    return sv_scale("On a scale of 1 to 10, how often do you ignore other important activities or responsibilities because of social media use? (1 being rarely, 10 being always): ", 1, 10)
 
 
 def sv_question5():
+    return sv_yesno("Do you often ignore other important activities or responsibilities because of social media use? (Yes/No) ")
+
+def sv_question6():
     return sv_yesno("Do you often ignore other important activities or responsibilities because of social media use? (Yes/No) ")
 
 
@@ -117,7 +132,8 @@ def main():
     svy_question3 = sv_question3()
     svy_question4 = sv_question4()
     svy_question5 = sv_question5()
+    svy_question6 = sv_question6()
     
-    worksheet.append_row([sv_name, sv_age, sv_time, svy_question1, svy_question2, svy_question3, svy_question4, svy_question5])
+    worksheet.append_row([sv_name, sv_age, sv_time, svy_question1, svy_question2, svy_question3, svy_question4, svy_question5, svy_question6])
 
 main()
