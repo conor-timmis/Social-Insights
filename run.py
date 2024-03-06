@@ -22,6 +22,9 @@ NAME = None
 AGE = 0
 
 def greeting():
+    """
+    Greets the user upon starting the Survey
+    """
     print("Welcome to my Social Media Survey\n" +
           "Please take your time and feel free to answer my questions below: ")
 
@@ -52,6 +55,9 @@ def age(sv_name):
 
 
 def screen_time(sv_name, sv_age, worksheet):
+    """
+    Keep a user inside a while-loop that also checks all characters for number & decimal input.
+    """
     print(f"Great! Your name is {sv_name}, and you are {sv_age}.\n" +
           "Please share your average screen time daily in hours, this can also include decimals for specificity: ")
 
@@ -64,6 +70,9 @@ def screen_time(sv_name, sv_age, worksheet):
 
 
 def sv_yesno(prompt):
+    """
+    Prompts the user during the survey to answer only with "Yes" or No" if called.
+    """
     while True:
         response = input(prompt).strip().title()  
         if response in ["Yes", "No"]:  
@@ -93,6 +102,9 @@ def sv_question5():
 
 
 def main():
+    """
+    Runs the survey program with all the functions declared.
+    """
     greeting()
     sv_name = name()
     sv_age = age(sv_name)
