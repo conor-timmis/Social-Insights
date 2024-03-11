@@ -26,7 +26,7 @@ def greeting():
     Greets the user upon starting the Survey
     """
     print("Welcome to my Social Media Survey\n" +
-          "Please take your time and feel free to answer my questions below: ")
+          "Please take your time and feel free to answer my questions below: \n")
 
 
 def name():
@@ -94,19 +94,19 @@ def sv_scale(prompt, min_value, max_value):
     
 
 def sv_question1():
-    return sv_yesno("Do you feel like you are spending too much time on Social Media daily? (Yes/No) ")
+    return sv_yesno("Do you feel like you are spending too much time on Social Media daily? (Yes/No) \n")
 
 
 def sv_question2():
-    return sv_yesno("Do you find yourself feeling the need to be on Social Media  often? (Yes/No) ")
+    return sv_yesno("Do you find yourself feeling the need to be on Social Media  often? (Yes/No) \n")
 
 
 def sv_question3():
-    return sv_scale("On a scale of 1 to 10, how frequently do you check for notifications? (1 being rarely, 10 being always): ", 1, 10)
+    return sv_scale("On a scale of 1 to 10, how frequently do you check for notifications? (1 being rarely, 10 being always): \n", 1, 10)
 
 
 def sv_question4():
-    return sv_scale("On a scale of 1 to 10, how often do you ignore other important activities or responsibilities because of social media use? (1 being rarely, 10 being always): ", 1, 10)
+    return sv_scale("On a scale of 1 to 10, how often do you ignore other important activities or responsibilities because of social media use? (1 being rarely, 10 being always): \n", 1, 10)
 
 
 def sv_question5():
@@ -115,7 +115,7 @@ def sv_question5():
                          "A. Frequently, I often feel like a failure in comparison\n"
                          "B. Occasionally, but I try not to let it affect me\n"
                          "C. Rarely, I know that people usually show only the best parts of their lives on social media\n"
-                         "Please choose A, B, or C: ").strip().upper()
+                         "Please choose A, B, or C: \n").strip().upper()
         if response in ['A', 'B', 'C']:
             return response
         else:
