@@ -134,6 +134,9 @@ def sv_question6():
             print("Please select a valid option (A, B, or C).")
 
 def sv_analysis(responses):
+    """
+    Analyse the answers given by the user.
+    """
     positive_count = 0
     negative_count = 0
     for response in responses:
@@ -149,7 +152,10 @@ def sv_analysis(responses):
     else:
         print("Your answers overall are okay, your social media use seems balanced.")
 
-def conduct_survey():
+def sv_handle():
+    """
+    Handles inputs to put into the response once all questions are answered.
+    """
     responses = []
     responses.append(sv_question1())
     responses.append(sv_question2())
