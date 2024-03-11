@@ -133,6 +133,33 @@ def sv_question6():
         else:
             print("Please select a valid option (A, B, or C).")
 
+def sv_analysis(responses):
+    positive_count = 0
+    negative_count = 0
+    for response in responses:
+        if response in ['Yes', 10, 'A']:
+            negative_count += 1
+        elif response in ['No', 'B', 'C'] or (isinstance(response, int) and response < 5):
+            positive_count += 1
+
+    if positive_count > negative_count:
+        print("You seem perfectly well with the way you're going, a completely healthy user of social media.")
+    elif positive_count < negative_count:
+        print("In my personal experience, I think you should look into self-improvement for time spent on your social media apps.")
+    else:
+        print("Your answers overall are okay, your social media use seems balanced.")
+
+def conduct_survey():
+    responses = []
+    responses.append(sv_question1())
+    responses.append(sv_question2())
+    responses.append(sv_question3())
+    responses.append(sv_question4())
+    responses.append(sv_question5())
+    responses.append(sv_question6())
+
+    sv_analysis(responses)
+
 
 def main():
     """
@@ -153,5 +180,7 @@ def main():
     svy_question6 = sv_question6()
     
     worksheet.append_row([sv_name, sv_age, sv_time, svy_question1, svy_question2, svy_question3, svy_question4, svy_question5, svy_question6])
+
+    sv_analysis([svy_question1, svy_question2, svy_question3, svy_question4, svy_question5, svy_question6])
 
 main()
