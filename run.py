@@ -74,7 +74,7 @@ def screen_time(sv_name, sv_age, worksheet):
     """
     print(
         f"Great! Your name is {sv_name}, and you are {sv_age}.\n"
-        "Please share your average screen time daily in hours, "
+        "Please share your average screen time daily in hours, \n"
         "this can also include decimals for specificity:\n"
     )
 
