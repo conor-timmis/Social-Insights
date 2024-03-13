@@ -219,7 +219,7 @@ My Gitpod version of the project in comparison to my Heroku version has been som
 
 ## Credits
 
-The forum Stackoverflow was a massive help towards the editing of my function "screen_time" as I had written it originally to collect data in the survey, but I had found a post which helped with the writing of checking for numbers and decimals in every character of the users input. This I was stuck with originally and needed some support and looked around as much as I could.
+The forum Stackoverflow & W3schools were a massive help towards the editing of my function "screen_time" as I had written it originally to collect data in the survey, but I had found a post which helped with the writing of checking for numbers and decimals in every character of the users input. This I was stuck with originally and needed some support and looked around as much as I could.
 
 
 ### Content
@@ -230,7 +230,7 @@ The forum Stackoverflow was a massive help towards the editing of my function "s
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [W3Schools](https://www.w3schools.com/python/ref_func_all.asp) | Python function | use of "all()" |
-| [StackOverflow](https://stackoverflow.com/questions/49742938/checking-isdigit-on-python) | quiz page | use of "char.isdigit()" |
+| [StackOverflow](https://stackoverflow.com/questions/49742938/checking-isdigit-on-python) | python function | use of "char.isdigit()" |
 
 ### Media
 
