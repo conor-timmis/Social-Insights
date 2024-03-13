@@ -197,7 +197,8 @@ def sv_analysis(responses):
     for response in responses:
         if response in ['Yes', 10, 'A']:
             negative_count += 1
-        elif response in ['No', 'B', 'C'] or (isinstance(response, int) and response < 5):  # NOQA
+        elif (response in ['No', 'B', 'C'] or 
+      (isinstance(response, int) and response < 5)):
             positive_count += 1
 
     clear()
