@@ -13,3 +13,9 @@ Once I have enough data, I hope to figure out what's wrong with the internet tod
 
 
 ![screenshot](documentation/preview.png)
+
+
+## UX
+
+
+My design process focused on creating a straightforward user experience by keeping the program's flow as linear as possible. Initially, users are prompted to provide essential information such as their name, age, and screen time. This will make for comparing/categorising easier in future development. Then from there the user will be asked questions with are somewhat categorised by how they operate, so I have implemented a couple of yes or no questions, then it leads onto the scale of 1-10 questions, then into the multiple choice questions which have been marked as A, B or C to answer.
