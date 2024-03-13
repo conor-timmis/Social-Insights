@@ -42,8 +42,8 @@ def name():
     """
     while True:
         prompt = (
-            "Please enter your name below, \n"
-            "it can be full name or "
+            "Please enter your name below, "
+            "it can be\nfull name or "
             "just your first name: \n"
         )
         NAME = input(prompt).strip().title()
@@ -72,6 +72,7 @@ def screen_time(sv_name, sv_age, worksheet):
     Keep a user inside a while-loop that also
     checks all characters for number & decimal input.
     """
+    clear()
     print(
         f"Great! Your name is {sv_name}, and you are {sv_age}.\n"
         "Please share your average screen time daily in hours, \n"
@@ -106,6 +107,7 @@ def sv_yesno(prompt):
 
 def sv_scale(prompt, min_value, max_value):
     while True:
+        clear()
         try:
             response = int(input(prompt))
             if min_value <= response <= max_value:
@@ -128,7 +130,7 @@ def sv_question1():
 
 def sv_question2():
     return sv_yesno(
-        "Do you find yourself feeling the need \n"
+        "Do you find yourself feeling the need "
         "to be on Social Media often? (Yes/No) \n"
     )
 
@@ -153,6 +155,7 @@ def sv_question4():
 
 def sv_question5():
     while True:
+        clear()
         response = input(
             "How often do you find yourself comparing \n"
             "your life to others' on social media?\n"
@@ -161,7 +164,6 @@ def sv_question5():
             "C. Rarely, I know that people usually show only the\n"
             "best parts of their lives on social media\n"
             "Please choose A, B, or C: \n").strip().upper()
-        clear()
         if response in ['A', 'B', 'C']:
             return response
         else:
@@ -170,6 +172,7 @@ def sv_question5():
 
 def sv_question6():
     while True:
+        clear()
         response = input(
             "How do you feel when you see others having fun "
             "on social media while you're not included?\n"
@@ -179,7 +182,6 @@ def sv_question6():
             "C. Happy for them: I appreciate their experiences \n"
             "without feeling left out\n"
             "Choose A, B, or C: ").strip().upper()
-        clear()
         if response in ['A', 'B', 'C']:
             return response
         else:
