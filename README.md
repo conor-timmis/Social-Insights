@@ -70,3 +70,40 @@ My design process focused on creating a straightforward user experience by keepi
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
+
+
+## Data Model
+
+### Flowchart
+
+
+![screenshot](documentation/flowchart.png)
+
+
+### Classes & Functions
+
+
+The primary functions used on this application are:
+
+- `clear()`
+    - Clears the command line as the questions are being answered.
+- `name()`
+    - Creates a means of identifying the user further in the survey.
+- `age()`
+    - Creates a means of identifying age within the user.
+- `sv_yesno()`
+    - Prompts the user to respond with "yes" or "no". If the user's response does not match either "yes" or "no", it allows for re-prompting until a valid response is given.
+- `sv_analysis()`
+    - Analyzes every answer given by the user to be used for the feedback process later on.
+- `sv_scale()`
+    -  Displays a prompt to the user and allows a minimum and maximum value for use in questions.
+- `main()`
+    - Run all program functions.
+
+### Imports
+
+I've used the following Python packages and/or external imported packages.
+
+- `gspread`: used with the Google Sheets API
+- `google.oauth2.service_account`: used for the Google Sheets API credentials
+- `os`: used for adding a `clear()` function
