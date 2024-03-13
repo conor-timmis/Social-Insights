@@ -215,3 +215,28 @@ You can fork this repository by using the following steps:
 ### Local VS Deployment
 
 My Gitpod version of the project in comparison to my Heroku version has been somewhat tedious to measure up the text and what should and shouldn't be on each line. I have tried to make it in a way where it flows properly rather than always filling in the lines full of text when they are displayed.
+
+
+## Credits
+
+The forum Stackoverflow was a massive help towards the editing of my function "screen_time" as I had written it originally to collect data in the survey, but I had found a post which helped with the writing of checking for numbers and decimals in every character of the users input. This I was stuck with originally and needed some support and looked around as much as I could.
+
+
+### Content
+
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
+| [W3Schools](https://www.w3schools.com/python/ref_func_all.asp) | Python function | use of "all()" |
+| [StackOverflow](https://stackoverflow.com/questions/49742938/checking-isdigit-on-python) | quiz page | use of "char.isdigit()" |
+
+### Media
+
+
+### Acknowledgements
+
+
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project and helping me with a few errors along the way.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
