@@ -1,32 +1,15 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [SOCIAL INSIGHTS](https://social-insights-5fd3e17a0651.herokuapp.com)
 
-Welcome,
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+Welcome to Social Insights, a survey about Social Media and how it affects people. I made this survey to understand better how social media addiction impacts lives, especially since the pandemic. Many people, especially younger ones, seem to spend a lot of time on their phones instead of living in the real world.
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+At first, I've asked basic questions, but I plan to ask more detailed ones later to get better information.
 
-## Creating the Heroku app
+Once I have enough data, I hope to figure out what's wrong with the internet today. It often feels like the internet controls us, our behaviour and shows us what it wants us to see based on algorithms.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+![screenshot](documentation/preview.png)
