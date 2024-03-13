@@ -106,6 +106,9 @@ def sv_yesno(prompt):
 
 
 def sv_scale(prompt, min_value, max_value):
+    """
+    Displays a prompt to the user and allows a minimum and maximum value for use in questions.
+    """
     while True:
         clear()
         try:
