@@ -37,3 +37,20 @@ Documentation and Logs:
 - Implemented a clear function (as well as the "os" package) as advised by my mentor to clear the page as the questions are answered to make it more visually appealing.
 - Started necessary testing to make sure everything was in order, found a few issues with indentations after not testing for a while and fixed all of those. 
 - Fixed everything minor with the use of PEP8 checker, had to go back again and double check once final Docstrings were written and certain lines felt out of place, fixed all after a few issues all had with indentation.
+
+
+## Code Validation
+
+
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+
+### Python
+
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+| Directory | File | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+|  | run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/conor-timmis/Social-Insights/main/run.py) | ![screenshot](documentation/validation/pep8check.png) | "All clear, no errors found" |
