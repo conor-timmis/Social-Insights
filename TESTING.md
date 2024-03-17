@@ -54,3 +54,21 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
 |  | run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/conor-timmis/Social-Insights/main/run.py) | ![screenshot](documentation/validation/pep8check.png) | "All clear, no errors found" |
+
+
+## Defensive Programming
+
+
+- Users must enter a valid letter/word/string when prompted, if they don't, the question will be asked again and the user will be prompted with what kind of answer the question is looking for.
+- Users are prompted to use only the answers mentioned after the question, I have used "Yes" or "No", Scale of 1-10 and multiple choice questions to bring variety and included numerous kinds of checks.
+- When testing, I tried to make sure I tried varieties of ways to "bug" the answer through, such as trying answers with different symbols as well as letters or numbers depending on question.
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Page | Expectation | Test | Result | Fix | Screenshot |
+| --- | --- | --- | --- | --- | --- |
+| Home | Screen Time is built to store name and age | Tested the feature entering them into the survey | The feature behaved as expected, and it displayed both in the screen time question | Test concluded and passed | ![screenshot](documentation/features/screentime.png) |
+| Home | Feature is expected to only allow decimals or numbers | Tested the feature by typing "hello" | The feature behaved as expected, and it blocked my input of letters | Test concluded and passed | ![screenshot](documentation/features/screentime2.png) |
+| Home | Feature is expected to stop and loop the question if answered incorrectly | Tested the feature by typing "test" instead of "yes" or "no" | The feature behaved as expected, and it stopped me and looped the question | Test concluded and passed | ![screenshot](documentation/features/yesorno.png) |
+| Home | Feature is expected to only allow "A" "B" or "C" answers | Tested the feature by typing "D" | The feature behaved as expected, the question looped instead of allowing a pass through the question | Test concluded and passed | ![screenshot](documentation/features/abcd.png) |
+| Home | Feature is expected to feedback once the user finished the survey | Tested the feature by answering all questions | The feature behaved as expected, and it displayed the appropriate feedback message based on the answers I gave | Test concluded and passed | ![screenshot](documentation/features/feedbacktesting.png) |
