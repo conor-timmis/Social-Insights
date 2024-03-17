@@ -72,3 +72,16 @@ Defensive programming was manually tested with the below user acceptance testing
 | Home | Feature is expected to stop and loop the question if answered incorrectly | Tested the feature by typing "test" instead of "yes" or "no" | The feature behaved as expected, and it stopped me and looped the question | Test concluded and passed | ![screenshot](documentation/features/yesorno.png) |
 | Home | Feature is expected to only allow "A" "B" or "C" answers | Tested the feature by typing "D" | The feature behaved as expected, the question looped instead of allowing a pass through the question | Test concluded and passed | ![screenshot](documentation/features/abcd.png) |
 | Home | Feature is expected to feedback once the user finished the survey | Tested the feature by answering all questions | The feature behaved as expected, and it displayed the appropriate feedback message based on the answers I gave | Test concluded and passed | ![screenshot](documentation/features/feedbacktesting.png) |
+
+
+## Bugs
+
+- One bug I faced was (not so much a bug) but a rendering issue I would call it and that was how the words wrapped within the display box on Heroku as opposed to the command line in Gitpod or Visual Studio Code (rarely used) as they wrap automatically and the Heroku version does not it was making the judgement of where to format each line a little tricky.
+
+- Another bug I faced was when I was initially writing the code, and this was to do with data integrity, my answers given would be incorrect in a way where it would skip boxes or append vertically rather than horizontally, but as I am new to Python entirely I had to look up how to append the correct way in order to have them display under the right headings within my spreadsheet. 
+
+- I had many errors found by PEP8, a lot of them being "X line too long" which I have already fixed at this point but it was interesting to see that I had around 15-20 of them as someone who doesn't really know Python too well, and even found some indentation errors which were all quite simple to fix and made it easier to follow the etiquette of the language later on.
+
+## Unfixed Bugs
+
+I am not currently aware even after testing of any bugs.
