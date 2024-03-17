@@ -107,7 +107,8 @@ def sv_yesno(prompt):
 
 def sv_scale(prompt, min_value, max_value):
     """
-    Displays a prompt to the user and allows a minimum and maximum value for use in questions.
+    Displays a prompt to the user and allows a minimum
+    and maximum value for use in questions.
     """
     while True:
         clear()
@@ -157,8 +158,8 @@ def sv_question4():
 
 
 def sv_question5():
+    clear()
     while True:
-        clear()
         response = input(
             "How often do you find yourself comparing \n"
             "your life to others' on social media?\n"
@@ -167,6 +168,7 @@ def sv_question5():
             "C. Rarely, I know that people usually show only the\n"
             "best parts of their lives on social media\n"
             "Please choose A, B, or C: \n").strip().upper()
+        clear()
         if response in ['A', 'B', 'C']:
             return response
         else:
@@ -175,7 +177,6 @@ def sv_question5():
 
 def sv_question6():
     while True:
-        clear()
         response = input(
             "How do you feel when you see others having fun "
             "on social media while you're not included?\n"
@@ -185,6 +186,7 @@ def sv_question6():
             "C. Happy for them: I appreciate their experiences \n"
             "without feeling left out\n"
             "Choose A, B, or C: ").strip().upper()
+        clear()
         if response in ['A', 'B', 'C']:
             return response
         else:
@@ -200,8 +202,8 @@ def sv_analysis(responses):
     for response in responses:
         if response in ['Yes', 10, 'A']:
             negative_count += 1
-        elif (response in ['No', 'B', 'C'] or 
-      (isinstance(response, int) and response < 5)):
+        elif (response in ['No', 'B', 'C'] or
+                (isinstance(response, int) and response < 5)):
             positive_count += 1
 
     clear()
