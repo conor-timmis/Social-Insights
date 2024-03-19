@@ -83,6 +83,16 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | 4K Monitor | ![screenshot](documentation/responsiveness/4kdesktop-home.png) | Works as expected |
 
 
+## Lighthouse Audit
+
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Screenshot | Notes |
+| --- | --- | --- |
+| Home | ![screenshot](documentation/audit/lighthouse.png) | Performance is good overall, files unrelated to my page are mentioned by Lighthouse |
+
+
 ## Defensive Programming
 
 
@@ -109,6 +119,7 @@ Defensive programming was manually tested with the below user acceptance testing
 - Another bug I faced was when I was initially writing the code, and this was to do with data integrity, my answers given would be incorrect in a way where it would skip boxes or append vertically rather than horizontally, but as I am new to Python entirely I had to look up how to append the correct way in order to have them display under the right headings within my spreadsheet. 
 
 - I had many errors found by PEP8, a lot of them being "X line too long" which I have already fixed at this point but it was interesting to see that I had around 15-20 of them as someone who doesn't really know Python too well, and even found some indentation errors which were all quite simple to fix and made it easier to follow the etiquette of the language later on.
+
 
 ## Unfixed Bugs
 
