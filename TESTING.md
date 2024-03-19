@@ -67,11 +67,12 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Home | Screen Time is built to store name and age | Tested the feature entering them into the survey | The feature behaved as expected, and it displayed both in the screen time question | Test concluded and passed | ![screenshot](documentation/features/screentime.png) |
-| Home | Feature is expected to only allow decimals or numbers | Tested the feature by typing "hello" | The feature behaved as expected, and it blocked my input of letters | Test concluded and passed | ![screenshot](documentation/features/screentime2.png) |
-| Home | Feature is expected to stop and loop the question if answered incorrectly | Tested the feature by typing "test" instead of "yes" or "no" | The feature behaved as expected, and it stopped me and looped the question | Test concluded and passed | ![screenshot](documentation/features/yesorno.png) |
-| Home | Feature is expected to only allow "A" "B" or "C" answers | Tested the feature by typing "D" | The feature behaved as expected, the question looped instead of allowing a pass through the question | Test concluded and passed | ![screenshot](documentation/features/abcd.png) |
-| Home | Feature is expected to feedback once the user finished the survey | Tested the feature by answering all questions | The feature behaved as expected, and it displayed the appropriate feedback message based on the answers I gave | Test concluded and passed | ![screenshot](documentation/features/feedbacktesting.png) |
+| Home | Name function is for storing the name input when asked | Tested the feature entering my name when asked | The feature behaved as expected, and it displayed my name as part of the age function | Test concluded and passed | ![screenshot](documentation/features/namefunc.png) |
+| Home | Age is built to store the age input | Tested the feature by entering my age when asked in the survey | The feature behaved as expected, and it displayed my age long with my name | Test concluded and passed | ![screenshot](documentation/features/agefunc.png) |
+| Home | Screen Time is expected to only allow decimals or numbers | Tested the feature by typing "hello" | The feature behaved as expected, and it blocked my input of letters | Test concluded and passed | ![screenshot](documentation/features/screentime2.png) |
+| Home | Yes or No is expected to stop and loop the question if answered incorrectly | Tested the feature by typing "test" instead of "yes" or "no" | The feature behaved as expected, and it stopped me and looped the question | Test concluded and passed | ![screenshot](documentation/features/yesorno.png) |
+| Home | Multiple choice is expected to only allow "A" "B" or "C" answers | Tested the feature by typing "D" | The feature behaved as expected, the question looped instead of allowing a pass through the question | Test concluded and passed | ![screenshot](documentation/features/abcd.png) |
+| Home | Feedback is expected to operate once the user finished the survey | Tested the feature by answering all questions | The feature behaved as expected, and it displayed the appropriate feedback message based on the answers I gave | Test concluded and passed | ![screenshot](documentation/features/feedbacktesting.png) |
 
 
 ## Bugs
