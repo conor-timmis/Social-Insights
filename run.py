@@ -111,9 +111,9 @@ def sv_scale(prompt, min_value, max_value):
     and maximum value for use in questions.
     """
     while True:
-        clear()
         try:
             response = int(input(prompt))
+            clear()
             if min_value <= response <= max_value:
                 return response
             else:
