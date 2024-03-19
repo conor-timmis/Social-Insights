@@ -3,7 +3,6 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights)
-[![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
 
 
 Welcome to Social Insights, a survey about Social Media and how it affects people. I made this survey to understand better how social media addiction impacts lives, especially since the pandemic. Many people, especially younger ones, seem to spend a lot of time on their phones instead of living in the real world.
@@ -27,25 +26,25 @@ My design process focused on creating a straightforward user experience by keepi
 
 ### Existing Features
 
-- ** Inputs **
+-  Inputs 
 
     - Inputs are to be used to answer the questions, and they are also gated behind other functions to stop people from mis-answering questions e.g Numbers being used in the Name Question will loop so you have to answer appropriately.
 
 ![screenshot](documentation/features/inputs.png)
 
-- ** Scale Questions **
+-  Scale Questions 
 
     - The Scale Questions are in junction with the Scale function to make sure you can answer with numbers 1 through 10 depending on your answer and making sure you cannot input any other way.
 
 ![screenshot](documentation/features/scaleqs.png)
 
-- ** Multiple Choice Questions **
+-  Multiple Choice Questions 
 
     - Multiple choice questions allow the user to choose a different answer between the 3 given using A, B or C, to switch things up from the norm.
 
 ![screenshot](documentation/features/mpchoice.png)
 
-- ** Feedback **
+-  Feedback 
 
     - The feedback feature is based on how you as a user answer the questions. If you are someone who answers based on a lot of usage of social media, it will feedback one way, same with the opposite and even a middle ground feedback.
 
@@ -71,6 +70,7 @@ My design process focused on creating a straightforward user experience by keepi
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
+- [![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
 
 
 ## Data Model
