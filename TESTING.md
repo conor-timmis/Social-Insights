@@ -69,6 +69,20 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Opera GX | ![screenshot](documentation/browsers/operagx-home.png) | "Warning: A form field element should have an id or name attribute" & Missing Favicon Error. |
 
 
+## Responsiveness
+
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Home | Notes |
+| --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile-home.png) | Fits within the screen although much smaller |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-home.png) | Fits within the screen although much smaller |
+| Desktop | ![screenshot](documentation/responsiveness/desktop-home.png) | Works as expected |
+| XL Monitor | ![screenshot](documentation/responsiveness/2kdesktop-home.png) | Works as expected |
+| 4K Monitor | ![screenshot](documentation/responsiveness/4kdesktop-home.png) | Works as expected |
+
+
 ## Defensive Programming
 
 
