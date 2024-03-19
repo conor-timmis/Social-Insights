@@ -23,14 +23,14 @@ I have had a couple of friends briefly test my page, below are the feedbacks the
 
 Regression Testing:
 
-After implementing fixes and updates, I have ensured that features current old and new are working as intended, as I did not want to push the end result as broken.
+Throughout the project, I have consistently addressed issues and implemented necessary fixes and updates to both existing and new features. I took this approach along the way as I wanted the best result out of my program as possible.
 
 Documentation and Logs:
 
 - Declare which packages will be necessary initially.
 - Wrote functions with prints making sure all of them work as intended.
 - Check with the use of newly written functions that they will append to the spreadsheet.
-- Implemented use of {name} & {age} functionality so the data is reused and more interactive throughout the survey.
+- Implemented use of calling the name and age functionality so the data is reused and more interactive throughout the survey.
 - Wrote actual questions to replace the placeholder ones I originally wrote for testing.
 - Added checks to the questions to make sure answers were kept genuine as possible.
 - Tested the functionality of everything through out so far.
