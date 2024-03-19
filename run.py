@@ -119,7 +119,7 @@ def sv_scale(prompt, min_value, max_value):
             else:
                 print(
                     f"Sorry, please enter a number "
-                    "between {min_value} and {max_value}."
+                    f"between 1 and 10."
                     )
         except ValueError:
             print("Please enter a valid number.")
