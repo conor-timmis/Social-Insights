@@ -3,6 +3,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/conor-timmis/Social-Insights)](https://github.com/conor-timmis/Social-Insights)
+[![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
 
 
 Welcome to Social Insights, a survey about Social Media and how it affects people. I made this survey to understand better how social media addiction impacts lives, especially since the pandemic. Many people, especially younger ones, seem to spend a lot of time on their phones instead of living in the real world.
