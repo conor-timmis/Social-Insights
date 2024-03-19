@@ -56,6 +56,19 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 |  | run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/conor-timmis/Social-Insights/main/run.py) | ![screenshot](documentation/validation/pep8check.png) | "All clear, no errors found" |
 
 
+## Browser Compatibility
+
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Home | Notes |
+| --- | --- | --- |
+| Chrome | ![screenshot](documentation/browsers/chrome-home.png) | "Warning: A form field element should have an id or name attribute" (Not related to Python code though) |
+| Edge | ![screenshot](documentation/browsers/edge-home.png) | Few issues relating to Javascript used for my page |
+| Firefox | ![screenshot](documentation/browsers/firefox-home.png) | No Compatibility issues found. |
+| Opera GX | ![screenshot](documentation/browsers/operagx-home.png) | "Warning: A form field element should have an id or name attribute" & Missing Favicon Error. |
+
+
 ## Defensive Programming
 
 
